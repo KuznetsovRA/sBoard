@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Canvas App</title>
+</head>
+<body>
+<h1>Настройка Прямоугольников</h1>
+<div class="form__container">
+	<div class="form-group__container">
+		<div class="form-group ">
+			<h2>Прямоугольник 1</h2>
+			<label for="rect1X">X:</label>
+			<input type="number" id="rect1X" value="100">
+			<label for="rect1Y">Y:</label>
+			<input type="number" id="rect1Y" value="100">
+			<label for="rect1Width">Ширина:</label>
+			<input type="number" id="rect1Width" value="80">
+			<label for="rect1Height">Высота:</label>
+			<input type="number" id="rect1Height" value="50">
+		</div>
+		<div class="form-group">
+			<h2>Прямоугольник 2</h2>
+			<label for="rect2X">X:</label>
+			<input type="number" id="rect2X" value="100">
+			<label for="rect2Y">Y:</label>
+			<input type="number" id="rect2Y" value="156">
+			<label for="rect2Width">Ширина:</label>
+			<input type="number" id="rect2Width" value="80">
+			<label for="rect2Height">Высота:</label>
+			<input type="number" id="rect2Height" value="50">
+		</div>
+	</div>
+	<div class="form-group__container">
+		<div class="form-group">
+			<h2>Точка присоединения 1</h2>
+			<label for="cPoint1X">X:</label>
+			<input type="number" id="cPoint1X" value="140">
+			<label for="cPoint1Y">Y:</label>
+			<input type="number" id="cPoint1Y" value="100">
+			<label for="cPoint1Angle">Угол:</label>
+			<input type="number" id="cPoint1Angle" value="0">
+		</div>
+		<div class="form-group">
+			<h2>Точка присоединения 2</h2>
+			<label for="cPoint2X">X:</label>
+			<input type="number" id="cPoint2X" value="140">
+			<label for="cPoint2Y">Y:</label>
+			<input type="number" id="cPoint2Y" value="156">
+			<label for="cPoint2Angle">Угол:</label>
+			<input type="number" id="cPoint2Angle" value="0">
+		</div>
+	</div>
+	<div class="form-group">
+		<button id="drawButton">Нарисовать</button>
+	</div>
+</div>
+
+<div class="warning__container">
+	<span id="warning"></span>
+</div>
+
+<div class="canvas-container">
+	<canvas id="myCanvas"></canvas>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
